@@ -23,7 +23,7 @@ namespace AlmacenarDatosRasec
             catch (Exception EX)
             {
 
-                MessageBox.Show("Error, "+ EX.Message, "Error");
+                MessageBox.Show("Error, "+ EX.Message, "Error...");
             }
 
             return Conn;
