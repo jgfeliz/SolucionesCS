@@ -1,0 +1,6 @@
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\firstAplication\firstAplication\bin\Debug\firstAplication.exe.config
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\firstAplication\firstAplication\bin\Debug\firstAplication.exe
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\firstAplication\firstAplication\bin\Debug\firstAplication.pdb
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\firstAplication\firstAplication\obj\Debug\firstAplication.csprojResolveAssemblyReference.cache
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\firstAplication\firstAplication\obj\Debug\firstAplication.exe
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\firstAplication\firstAplication\obj\Debug\firstAplication.pdb

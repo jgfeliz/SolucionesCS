@@ -1,0 +1,2 @@
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+\\AFI03dc\HOME\jfeliz\My Documents\Visual Studio 2015\Projects\SolucionesCS\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config

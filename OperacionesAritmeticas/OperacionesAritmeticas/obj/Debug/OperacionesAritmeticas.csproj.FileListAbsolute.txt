@@ -1,0 +1,6 @@
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\OperacionesAritmeticas\OperacionesAritmeticas\bin\Debug\OperacionesAritmeticas.exe.config
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\OperacionesAritmeticas\OperacionesAritmeticas\bin\Debug\OperacionesAritmeticas.exe
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\OperacionesAritmeticas\OperacionesAritmeticas\bin\Debug\OperacionesAritmeticas.pdb
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\OperacionesAritmeticas\OperacionesAritmeticas\obj\Debug\OperacionesAritmeticas.csprojResolveAssemblyReference.cache
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\OperacionesAritmeticas\OperacionesAritmeticas\obj\Debug\OperacionesAritmeticas.exe
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\OperacionesAritmeticas\OperacionesAritmeticas\obj\Debug\OperacionesAritmeticas.pdb

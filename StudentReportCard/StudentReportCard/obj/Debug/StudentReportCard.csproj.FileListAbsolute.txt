@@ -1,0 +1,6 @@
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\StudentReportCard\StudentReportCard\bin\Debug\StudentReportCard.exe.config
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\StudentReportCard\StudentReportCard\bin\Debug\StudentReportCard.exe
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\StudentReportCard\StudentReportCard\bin\Debug\StudentReportCard.pdb
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\StudentReportCard\StudentReportCard\obj\Debug\StudentReportCard.exe
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\StudentReportCard\StudentReportCard\obj\Debug\StudentReportCard.pdb
+\\afi03dc\home\jfeliz\my documents\visual studio 2015\Projects\StudentReportCard\StudentReportCard\obj\Debug\StudentReportCard.csprojResolveAssemblyReference.cache

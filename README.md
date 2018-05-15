@@ -1,2 +1,0 @@
-# SolucionesCS
-testing
