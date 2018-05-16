@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabClientes = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.Cerrar = new System.Windows.Forms.Button();
             this.buttonGuardarCliente = new System.Windows.Forms.Button();
             this.textLicencia = new System.Windows.Forms.TextBox();
@@ -42,6 +43,9 @@
             this.Inicial = new System.Windows.Forms.Label();
             this.Nombre = new System.Windows.Forms.Label();
             this.tabVendedores = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.buttonGuardarVendedores = new System.Windows.Forms.Button();
             this.textVendedoresApellido = new System.Windows.Forms.TextBox();
             this.textInicialVendedor = new System.Windows.Forms.TextBox();
             this.textNombreVendedor = new System.Windows.Forms.TextBox();
@@ -49,24 +53,35 @@
             this.InicialVendedor = new System.Windows.Forms.Label();
             this.NombreVendedor = new System.Windows.Forms.Label();
             this.tabCalibre = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textCalibre = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabInventario = new System.Windows.Forms.TabPage();
             this.tabMarcas = new System.Windows.Forms.TabPage();
             this.tabModelos = new System.Windows.Forms.TabPage();
             this.tabOrdenes = new System.Windows.Forms.TabPage();
-            this.buttonGuardarVendedores = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.error1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textCalibre = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textMarcas = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textModelo = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabClientes.SuspendLayout();
             this.tabVendedores.SuspendLayout();
             this.tabCalibre.SuspendLayout();
+            this.tabMarcas.SuspendLayout();
+            this.tabModelos.SuspendLayout();
+            this.tabOrdenes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.error1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +94,7 @@
             this.tabControl1.Controls.Add(this.tabMarcas);
             this.tabControl1.Controls.Add(this.tabModelos);
             this.tabControl1.Controls.Add(this.tabOrdenes);
-            this.tabControl1.Location = new System.Drawing.Point(-3, 1);
+            this.tabControl1.Location = new System.Drawing.Point(-2, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(385, 435);
@@ -105,6 +120,16 @@
             this.tabClientes.TabIndex = 0;
             this.tabClientes.Text = "Clientes";
             this.tabClientes.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(315, 29);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Registro de nuevos Clientes";
             // 
             // Cerrar
             // 
@@ -231,6 +256,36 @@
             this.tabVendedores.UseVisualStyleBackColor = true;
             this.tabVendedores.Click += new System.EventHandler(this.tabVendedores_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(359, 29);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Registro de nuevos Vendedores";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(293, 369);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Cerrar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonGuardarVendedores
+            // 
+            this.buttonGuardarVendedores.Location = new System.Drawing.Point(11, 369);
+            this.buttonGuardarVendedores.Name = "buttonGuardarVendedores";
+            this.buttonGuardarVendedores.Size = new System.Drawing.Size(75, 23);
+            this.buttonGuardarVendedores.TabIndex = 17;
+            this.buttonGuardarVendedores.Text = "Guardar";
+            this.buttonGuardarVendedores.UseVisualStyleBackColor = true;
+            this.buttonGuardarVendedores.Click += new System.EventHandler(this.button1_Click);
+            // 
             // textVendedoresApellido
             // 
             this.textVendedoresApellido.Location = new System.Drawing.Point(116, 160);
@@ -306,97 +361,32 @@
             this.tabCalibre.Text = "Calibres";
             this.tabCalibre.UseVisualStyleBackColor = true;
             // 
-            // tabInventario
+            // button3
             // 
-            this.tabInventario.Location = new System.Drawing.Point(4, 22);
-            this.tabInventario.Name = "tabInventario";
-            this.tabInventario.Size = new System.Drawing.Size(377, 409);
-            this.tabInventario.TabIndex = 3;
-            this.tabInventario.Text = "Inventario";
-            this.tabInventario.UseVisualStyleBackColor = true;
-            this.tabInventario.Click += new System.EventHandler(this.tabInventario_Click);
+            this.button3.Location = new System.Drawing.Point(11, 369);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Guardar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // tabMarcas
+            // button1
             // 
-            this.tabMarcas.Location = new System.Drawing.Point(4, 22);
-            this.tabMarcas.Name = "tabMarcas";
-            this.tabMarcas.Size = new System.Drawing.Size(377, 409);
-            this.tabMarcas.TabIndex = 4;
-            this.tabMarcas.Text = "Marcas";
-            this.tabMarcas.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(293, 369);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // tabModelos
+            // textCalibre
             // 
-            this.tabModelos.Location = new System.Drawing.Point(4, 22);
-            this.tabModelos.Name = "tabModelos";
-            this.tabModelos.Size = new System.Drawing.Size(377, 409);
-            this.tabModelos.TabIndex = 5;
-            this.tabModelos.Text = "Modelos";
-            this.tabModelos.UseVisualStyleBackColor = true;
-            // 
-            // tabOrdenes
-            // 
-            this.tabOrdenes.Location = new System.Drawing.Point(4, 22);
-            this.tabOrdenes.Name = "tabOrdenes";
-            this.tabOrdenes.Size = new System.Drawing.Size(377, 409);
-            this.tabOrdenes.TabIndex = 6;
-            this.tabOrdenes.Text = "Ordenes";
-            this.tabOrdenes.UseVisualStyleBackColor = true;
-            // 
-            // buttonGuardarVendedores
-            // 
-            this.buttonGuardarVendedores.Location = new System.Drawing.Point(11, 369);
-            this.buttonGuardarVendedores.Name = "buttonGuardarVendedores";
-            this.buttonGuardarVendedores.Size = new System.Drawing.Size(75, 23);
-            this.buttonGuardarVendedores.TabIndex = 17;
-            this.buttonGuardarVendedores.Text = "Guardar";
-            this.buttonGuardarVendedores.UseVisualStyleBackColor = true;
-            this.buttonGuardarVendedores.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(293, 369);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Cerrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 29);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Registro de nuevos Clientes";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(359, 29);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Registro de nuevos Vendedores";
-            // 
-            // error1
-            // 
-            this.error1.ContainerControl = this;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(317, 29);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Registro de nuevos Calibres";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.textCalibre.Location = new System.Drawing.Point(116, 94);
+            this.textCalibre.Name = "textCalibre";
+            this.textCalibre.Size = new System.Drawing.Size(100, 20);
+            this.textCalibre.TabIndex = 22;
             // 
             // label4
             // 
@@ -411,31 +401,182 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Calibre";
             // 
-            // textCalibre
+            // label3
             // 
-            this.textCalibre.Location = new System.Drawing.Point(106, 94);
-            this.textCalibre.Name = "textCalibre";
-            this.textCalibre.Size = new System.Drawing.Size(100, 20);
-            this.textCalibre.TabIndex = 22;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(317, 29);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Registro de nuevos Calibres";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button1
+            // tabInventario
             // 
-            this.button1.Location = new System.Drawing.Point(293, 369);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Cerrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.tabInventario.Location = new System.Drawing.Point(4, 22);
+            this.tabInventario.Name = "tabInventario";
+            this.tabInventario.Size = new System.Drawing.Size(377, 409);
+            this.tabInventario.TabIndex = 3;
+            this.tabInventario.Text = "Inventario";
+            this.tabInventario.UseVisualStyleBackColor = true;
+            this.tabInventario.Click += new System.EventHandler(this.tabInventario_Click);
             // 
-            // button3
+            // tabMarcas
             // 
-            this.button3.Location = new System.Drawing.Point(11, 369);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.tabMarcas.Controls.Add(this.button5);
+            this.tabMarcas.Controls.Add(this.button4);
+            this.tabMarcas.Controls.Add(this.label6);
+            this.tabMarcas.Controls.Add(this.textMarcas);
+            this.tabMarcas.Controls.Add(this.label5);
+            this.tabMarcas.Location = new System.Drawing.Point(4, 22);
+            this.tabMarcas.Name = "tabMarcas";
+            this.tabMarcas.Size = new System.Drawing.Size(377, 409);
+            this.tabMarcas.TabIndex = 4;
+            this.tabMarcas.Text = "Marcas";
+            this.tabMarcas.UseVisualStyleBackColor = true;
+            // 
+            // tabModelos
+            // 
+            this.tabModelos.Controls.Add(this.button7);
+            this.tabModelos.Controls.Add(this.button6);
+            this.tabModelos.Controls.Add(this.textModelo);
+            this.tabModelos.Controls.Add(this.label8);
+            this.tabModelos.Controls.Add(this.label7);
+            this.tabModelos.Location = new System.Drawing.Point(4, 22);
+            this.tabModelos.Name = "tabModelos";
+            this.tabModelos.Size = new System.Drawing.Size(377, 409);
+            this.tabModelos.TabIndex = 5;
+            this.tabModelos.Text = "Modelos";
+            this.tabModelos.UseVisualStyleBackColor = true;
+            // 
+            // tabOrdenes
+            // 
+            this.tabOrdenes.Controls.Add(this.label9);
+            this.tabOrdenes.Controls.Add(this.comboBox1);
+            this.tabOrdenes.Location = new System.Drawing.Point(4, 22);
+            this.tabOrdenes.Name = "tabOrdenes";
+            this.tabOrdenes.Size = new System.Drawing.Size(377, 409);
+            this.tabOrdenes.TabIndex = 6;
+            this.tabOrdenes.Text = "Ordenes";
+            this.tabOrdenes.UseVisualStyleBackColor = true;
+            // 
+            // error1
+            // 
+            this.error1.ContainerControl = this;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(280, 29);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Registro de nueva Marca";
+            // 
+            // textMarcas
+            // 
+            this.textMarcas.Location = new System.Drawing.Point(116, 94);
+            this.textMarcas.Name = "textMarcas";
+            this.textMarcas.Size = new System.Drawing.Size(100, 20);
+            this.textMarcas.TabIndex = 22;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(10, 85);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 29);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Marca";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(11, 369);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 24;
+            this.button4.Text = "Guardar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(293, 369);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 25;
+            this.button5.Text = "Cerrar";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(297, 29);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Registro de nuevo Modelo";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(10, 85);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(95, 29);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Modelo";
+            // 
+            // textModelo
+            // 
+            this.textModelo.Location = new System.Drawing.Point(116, 94);
+            this.textModelo.Name = "textModelo";
+            this.textModelo.Size = new System.Drawing.Size(100, 20);
+            this.textModelo.TabIndex = 24;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(11, 369);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 25;
+            this.button6.Text = "Guardar";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(293, 369);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 26;
+            this.button7.Text = "Cerrar";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(133, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(19, 33);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 29);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Cliente";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Form1
             // 
@@ -452,6 +593,12 @@
             this.tabVendedores.PerformLayout();
             this.tabCalibre.ResumeLayout(false);
             this.tabCalibre.PerformLayout();
+            this.tabMarcas.ResumeLayout(false);
+            this.tabMarcas.PerformLayout();
+            this.tabModelos.ResumeLayout(false);
+            this.tabModelos.PerformLayout();
+            this.tabOrdenes.ResumeLayout(false);
+            this.tabOrdenes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.error1)).EndInit();
             this.ResumeLayout(false);
 
@@ -493,6 +640,18 @@
         private System.Windows.Forms.TextBox textCalibre;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textMarcas;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textModelo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

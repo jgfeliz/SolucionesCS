@@ -49,7 +49,7 @@ namespace AlmacenarDatosRasec
             }
             error1.SetError(textNombre, "");//con esta instruccion quitamos el error una ver corregido
 
-            //esta instruccion evalua si el campo textNombre esta vacio retornandonos un errorProvider
+            //esta instruccion evalua si el campo textLicencia esta vacio retornandonos un errorProvider
             int verificar;
             if(!int.TryParse(textLicencia.Text, out verificar))
             {
@@ -89,6 +89,25 @@ namespace AlmacenarDatosRasec
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //esta instruccion evalua si el campo textNombreVendedor.Text esta vacio retornandonos un errorProvider
+            if (textNombreVendedor.Text == "")
+            {
+                error1.SetError(textNombreVendedor, "Debe ingresar un Nombre");
+                textNombreVendedor.Focus();
+                return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
+            }
+            error1.SetError(textNombreVendedor, "");//con esta instruccion quitamos el error una ver corregido
+
+            //esta instruccion evalua si el campo textVendedoresApellido.Text esta vacio retornandonos un errorProvider
+            if (textVendedoresApellido.Text == "")
+            {
+                error1.SetError(textVendedoresApellido, "Debe ingresar un Apellido");
+                textVendedoresApellido.Focus();
+                return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
+            }
+            error1.SetError(textVendedoresApellido, "");//con esta instruccion quitamos el error una ver corregido
+
+
             vendedores vendedores = new vendedores();
             vendedores.Vendedores_Nombre = textNombreVendedor.Text;
             vendedores.Vendedores_Inicial = textInicialVendedor.Text;
@@ -99,6 +118,9 @@ namespace AlmacenarDatosRasec
             if (resultado > 0)
             {
                 MessageBox.Show("Datos guardados correctamente", "Datos Guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textVendedoresApellido.Text = "";
+                textInicialVendedor.Text = "";
+                textNombreVendedor.Text = "";
             }
             else
             {
@@ -129,6 +151,105 @@ namespace AlmacenarDatosRasec
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //esta instruccion evalua si el campo textCalibre.Text esta vacio retornandonos un errorProvider
+            if (textCalibre.Text == "")
+            {
+                error1.SetError(textCalibre, "Debe ingresar un Calibre");
+                textCalibre.Focus();
+                return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
+            }
+            error1.SetError(textCalibre, "");//con esta instruccion quitamos el error una ver corregido
+            
+            calibre calibre = new calibre();
+            calibre.Calibres_Calibres = textCalibre.Text;                                 
+
+            int resultado = calibreDAL.Agregar_calibre(calibre);
+
+            if (resultado > 0)
+            {
+                MessageBox.Show("Datos guardados correctamente", "Datos Guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textCalibre.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("No se pudieron Guardar los datos", "Error Al guardar los datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //esta instruccion evalua si el campo textMarcas.Text esta vacio retornandonos un errorProvider
+            if (textMarcas.Text == "")
+            {
+                error1.SetError(textMarcas, "Debe ingresar una Marca de Arma");
+                textMarcas.Focus();
+                return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
+            }
+            error1.SetError(textMarcas, "");//con esta instruccion quitamos el error una ver corregido
+                        
+            marcas marcas = new marcas();
+            marcas.Marcas_Marcas = textMarcas.Text;
+
+            int resultado = marcasDAL.Agregar_marcas(marcas);
+
+            if (resultado > 0)
+            {
+                MessageBox.Show("Datos guardados correctamente", "Datos Guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textMarcas.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("No se pudieron Guardar los datos", "Error Al guardar los datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //esta instruccion evalua si el campo textModelo.Text esta vacio retornandonos un errorProvider
+            if (textModelo.Text == "")
+            {
+                error1.SetError(textModelo, "Debe ingresar un Modelo de Arma");
+                textModelo.Focus();
+                return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
+            }
+            error1.SetError(textModelo, "");//con esta instruccion quitamos el error una ver corregido
+
+            modelos modelos = new modelos();
+            modelos.Modelos_Modelos = textModelo.Text;
+
+            int resultado = modelosDAL.Agregar_modelos(modelos);
+
+            if (resultado > 0)
+            {
+                MessageBox.Show("Datos guardados correctamente", "Datos Guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textModelo.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("No se pudieron Guardar los datos", "Error Al guardar los datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
