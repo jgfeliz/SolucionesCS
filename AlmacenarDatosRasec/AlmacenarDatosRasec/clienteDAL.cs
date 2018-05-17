@@ -101,4 +101,23 @@ namespace AlmacenarDatosRasec
 
         }
     }
+
+    public class inventarioDAL
+    {
+        public static int Agregar_inventario(inventario pInventario)
+        {
+            int retorno = 0;
+
+            using (SqlConnection Conn = BDComun.ObtenerConexion())
+            {
+                SqlCommand Comando = new SqlCommand(string.Format("Insert Into Inv.Inventario (Inventario_Marcas_Id, Inventario_Modelos_Id, Inventario_Calibres_Id, Inventario_NumeroDeSerie, Inventario_Costo, Inventario_Precio ) values ({0},{1},{2},'{3}','{4}','{5}')", pInventario.Inventario_Marcas_Id, pInventario.Inventario_Modelos_Id, pInventario.Inventario_Calibres_Id, pInventario.Inventario_NumeroDeSerie, pInventario.Inventario_Costo, pInventario.Inventario_Precio), Conn);
+                                
+        retorno = Comando.ExecuteNonQuery();
+
+            }
+
+            return retorno;
+
+        }
+    }
 }

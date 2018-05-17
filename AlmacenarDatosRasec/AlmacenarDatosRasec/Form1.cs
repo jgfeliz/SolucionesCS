@@ -251,5 +251,57 @@ namespace AlmacenarDatosRasec
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'rAbreu15DataSet3.Clientes' table. You can move, or remove it, as needed.
+            this.clientesTableAdapter1.Fill(this.rAbreu15DataSet3.Clientes);
+            // TODO: This line of code loads data into the 'rAbreu15DataSet2.Calibres' table. You can move, or remove it, as needed.
+            this.calibresTableAdapter.Fill(this.rAbreu15DataSet2.Calibres);
+            // TODO: This line of code loads data into the 'rAbreu15DataSet2.Modelos' table. You can move, or remove it, as needed.
+            this.modelosTableAdapter.Fill(this.rAbreu15DataSet2.Modelos);
+            // TODO: This line of code loads data into the 'rAbreu15DataSet2.Inventario' table. You can move, or remove it, as needed.
+            this.inventarioTableAdapter.Fill(this.rAbreu15DataSet2.Inventario);
+            // TODO: This line of code loads data into the 'rAbreu15DataSet2.Marcas' table. You can move, or remove it, as needed.
+            this.marcasTableAdapter.Fill(this.rAbreu15DataSet2.Marcas);
+            // TODO: This line of code loads data into the 'rAbreu15DataSet.Clientes' table. You can move, or remove it, as needed.
+            this.clientesTableAdapter.Fill(this.rAbreu15DataSet.Clientes);
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            inventario inventario = new inventario();
+            inventario.Inventario_Marcas_Id = boxMarca.SelectedValue.ToString();
+            inventario.Inventario_Modelos_Id = boxModelo.SelectedValue.ToString();
+            inventario.Inventario_Calibres_Id = boxModelo.SelectedValue.ToString();
+            inventario.Inventario_NumeroDeSerie = textSerie.Text;
+            inventario.Inventario_Costo = textCosto.Text;
+            inventario.Inventario_Precio = textPrecio.Text;
+            //cliente.Clientes_LicendiaDeArmas = Convert.ToInt32(textLicencia.Text);
+            
+            int resultado = inventarioDAL.Agregar_inventario(inventario);
+
+            if (resultado > 0)
+            {
+                MessageBox.Show("Datos guardados correctamente", "Datos Guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                boxMarca.Text = "";
+                boxModelo.Text = "";
+                boxCalibre.Text = "";
+                textSerie.Text = "";
+                textCosto.Text = "";
+                textPrecio.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("No se pudieron Guardar los datos", "Error Al guardar los datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+        }
     }
 }

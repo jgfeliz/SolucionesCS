@@ -80,4 +80,28 @@ namespace AlmacenarDatosRasec
 
         }
     }
+
+    public class inventario
+    {
+        public String Inventario_Marcas_Id { get; set; }
+        public String Inventario_Modelos_Id { get; set; }
+        public String Inventario_Calibres_Id { get; set; }
+        public String Inventario_NumeroDeSerie { get; set; }
+        public String Inventario_Costo { get; set; }
+        public String Inventario_Precio { get; set; }
+        
+        public inventario() { }
+
+        public inventario(String pInventario_Marcas_Id, String pInventario_Modelos_Id, String pInventario_Calibres_Id, String pInventario_NumeroDeSerie,
+            String pInventario_Costo, String pInventario_Precio)
+        {
+            this.Inventario_Marcas_Id = pInventario_Marcas_Id;
+            this.Inventario_Modelos_Id = pInventario_Modelos_Id;
+            this.Inventario_Calibres_Id = pInventario_Calibres_Id;
+            this.Inventario_NumeroDeSerie = pInventario_NumeroDeSerie;
+            this.Inventario_Costo = pInventario_Costo;
+            this.Inventario_Precio = pInventario_Precio;
+
+        }
+    }
 }
