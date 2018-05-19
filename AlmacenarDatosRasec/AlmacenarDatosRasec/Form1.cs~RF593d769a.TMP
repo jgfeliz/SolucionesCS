@@ -41,7 +41,7 @@ namespace AlmacenarDatosRasec
         {
 
             //esta instruccion evalua si el campo textNombre esta vacio retornandonos un errorProvider
-            if (textNombre.Text == "")
+            if (textNombre.Text == "") 
             {
                 error1.SetError(textNombre, "Debe ingresar un Nombre");
                 textNombre.Focus();
@@ -51,16 +51,16 @@ namespace AlmacenarDatosRasec
 
             //esta instruccion evalua si el campo textLicencia esta vacio retornandonos un errorProvider
             int verificar;
-            if (!int.TryParse(textLicencia.Text, out verificar))
+            if(!int.TryParse(textLicencia.Text, out verificar))
             {
                 error1.SetError(textLicencia, "Debe ingresar un Numero");
                 textLicencia.Focus();
-                return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
+               return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
             }
             error1.SetError(textLicencia, "");//con esta instruccion quitamos el error una ver corregido
 
 
-            cliente cliente = new cliente();
+            cliente cliente = new cliente();            
             cliente.Clientes_Nombre = textNombre.Text;
             cliente.Clientes_Inicial = textInicial.Text;
             cliente.Clientes_Apellido = textApellido.Text;
@@ -112,7 +112,7 @@ namespace AlmacenarDatosRasec
             vendedores.Vendedores_Nombre = textNombreVendedor.Text;
             vendedores.Vendedores_Inicial = textInicialVendedor.Text;
             vendedores.Vendedores_Apellido = textVendedoresApellido.Text;
-
+            
             int resultado = vendedoresDAL.Agregar_vendedores(vendedores);
 
             if (resultado > 0)
@@ -134,7 +134,7 @@ namespace AlmacenarDatosRasec
         }
 
         private void tabInventario_Click(object sender, EventArgs e)
-        {
+        {    
 
         }
 
@@ -163,9 +163,9 @@ namespace AlmacenarDatosRasec
                 return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
             }
             error1.SetError(textCalibre, "");//con esta instruccion quitamos el error una ver corregido
-
+            
             calibre calibre = new calibre();
-            calibre.Calibres_Calibres = textCalibre.Text;
+            calibre.Calibres_Calibres = textCalibre.Text;                                 
 
             int resultado = calibreDAL.Agregar_calibre(calibre);
 
@@ -195,7 +195,7 @@ namespace AlmacenarDatosRasec
                 return;//es obligatorio el uso del return, de lo contrario continua con la ejecucion del programa pese a que muestra el error
             }
             error1.SetError(textMarcas, "");//con esta instruccion quitamos el error una ver corregido
-
+                        
             marcas marcas = new marcas();
             marcas.Marcas_Marcas = textMarcas.Text;
 
@@ -303,8 +303,5 @@ namespace AlmacenarDatosRasec
             }
 
         }
-
     }
-      
-
 }
