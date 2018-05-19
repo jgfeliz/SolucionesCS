@@ -16,3 +16,6 @@
 \\AFI03dc\HOME\jfeliz\My Documents\Visual Studio 2015\Projects\SolucionesCS\AlmacenarDatosRasec\AlmacenarDatosRasec\obj\Debug\AlmacenarDatosRasec.Form1.resources
 \\AFI03dc\HOME\jfeliz\My Documents\Visual Studio 2015\Projects\SolucionesCS\AlmacenarDatosRasec\AlmacenarDatosRasec\obj\Debug\AlmacenarDatosRasec.Properties.Resources.resources
 \\AFI03dc\HOME\jfeliz\My Documents\Visual Studio 2015\Projects\SolucionesCS\AlmacenarDatosRasec\AlmacenarDatosRasec\obj\Debug\AlmacenarDatosRasec.csproj.GenerateResource.Cache
+C:\Users\Jfeliz2\Documents\Visual Studio 2015\Projects\SolucionesCS\AlmacenarDatosRasec\AlmacenarDatosRasec\bin\Debug\AlmacenarDatosRasec.exe.config
+C:\Users\Jfeliz2\Documents\Visual Studio 2015\Projects\SolucionesCS\AlmacenarDatosRasec\AlmacenarDatosRasec\obj\Debug\AlmacenarDatosRasec.exe
+C:\Users\Jfeliz2\Documents\Visual Studio 2015\Projects\SolucionesCS\AlmacenarDatosRasec\AlmacenarDatosRasec\obj\Debug\AlmacenarDatosRasec.pdb

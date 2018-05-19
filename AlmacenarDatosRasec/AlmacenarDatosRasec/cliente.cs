@@ -102,6 +102,9 @@ namespace AlmacenarDatosRasec
             this.Inventario_Costo = pInventario_Costo;
             this.Inventario_Precio = pInventario_Precio;
 
+
+
+            string hola = "hola";
         }
     }
 }
